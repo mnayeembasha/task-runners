@@ -16,7 +16,7 @@ body {
   background-color: #121212;
   color: whitesmoke;
   background: #121212
-  radial-gradient(rgba(255, 255, 255, 0.412) 10%, transparent 1%);
+  radial-gradient(rgba(255, 255, 255, 0.312) 10%, transparent 1%);
 
 background-size: 11px 11px;
 
@@ -49,7 +49,7 @@ section {
   align-items: center;
 }
 .examples img {
-  width: 130px;
+  width: 150px;
   height: 130px;
   padding: 0 1rem;
   border-radius: 50%;
@@ -72,26 +72,6 @@ ul li {
 
   background-size: 11px 11px;
 }
-/* Cross Lines Animation */
-.cla {
-    /* Dark mode colors and gradient */
-    background: #121212; /* Fallback for browsers that don't support gradients */
-    background: linear-gradient(
-      135deg,
-      #121212 25%,
-      #1a1a1a 25%,
-      #1a1a1a 50%,
-      #121212 50%,
-      #121212 75%,
-      #1a1a1a 75%,
-      #1a1a1a
-    );
-    background-size: 40px 40px;
-
-    /* Animation */
-    animation: move 4s linear infinite;
-  }
-
   @keyframes move {
     0% {
       background-position: 0 0;
@@ -136,6 +116,62 @@ li,.org-pink-gradient{
     mix-blend-mode: hard-light;
 }
  */
-.animate__flash{
-    animation-iteration-count: infinite;
+ .animate__flash{
+     animation-iteration-count: infinite;
+ }
+ span{
+     animation-duration: 3s;
+     animation-delay: 0.2s;
+     animation-iteration-count: infinite;
+    }
+    .animate__flip{
+        animation-iteration-count:unset;
+    }
+    li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+      li::before {
+        content: '';
+        display: inline-block;
+        background-image: url('images/gulp.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+        margin:0rem 1.5rem;
+        border-radius: 50%;
+        animation: rotate 2s linear infinite;
+      }
+.grunt-ul li::before{
+    background-image: url('images/grunt1.jpg');
+}
+.about li:first-child:before{
+    background-image: url('images/gulp.jpg');
+    width:90px;
+    height:50px;
+    /* animation: rotate 2s linear infinite; */
+    animation: unset;
+}
+.about li:last-child:before{
+    background-image: url('images/grunt1.jpg');
+    width:70px;
+    height:50px;
+    /* animation: rotate 2s linear infinite; */
+    animation: unset;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.marquee img{
+    width:150px !important;
+    height:150px !important;
 }

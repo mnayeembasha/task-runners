@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="btn.css" />
     <link rel="stylesheet" href="vroll.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hscroll.css" />
     <!-- Other Styling and Links-->
   </head>
   <body>
@@ -60,7 +61,8 @@
       class="jumbotron text-center d-flex justify-content-center align-items-center landing"
     >
       <div class="container">
-        <h1 class="display-2 header-text p-4 animate__animated animate__flash">Welcome to Task Runners</h1>
+        <h1 class="display-2 header-text p-4 animate__animated animate__flip">Welcome to <span class="animate__animated animate__fadeIn display-2 header-text p-4">Task Runners</span></h1>
+        <!-- <h1 class="display-2 header-text p-4 animate__animated animate__flip animate__flash">Welcome to Task Runners </h1> -->
         <!-- <p class="lead display-5 font-bold">Simplify your web development workflow with Gulp and Grunt.</p> -->
         <div class="caption mt-3">
           <h1>
@@ -121,6 +123,17 @@
             <img src="images/node.png" alt="NODE">
            </div>
 
+           <!-- <div class="container marquee marquee--6">
+            <img class="marquee__item" src="images/gulp.jpg"  alt="">
+            <img class="marquee__item" src="images/grunt1.jpg"  alt="">
+            <img class="marquee__item" src="images/web.png"  alt="">
+            <img class="marquee__item" src="images/npm.png"  alt="">
+            <img class="marquee__item" src="images/parcel.jpg"  alt="">
+            <img class="marquee__item" src="images/brucnh.png"  alt="">
+            <img class="marquee__item" src="images/broccoli.png"  alt="">
+            <img class="marquee__item" src="images/node.png"  alt="BROCCOLI">
+          </div> -->
+
         </section>
 
         <section class="topic p-4">
@@ -143,7 +156,7 @@
                         <div class="col-md-6 mb-2 d-flex justify-content-center">
                             <div class="grunt  p-4 text-[1.3rem]">
                                 <h1 class="display-5 font-bold text-left pb-[1rem] light-org-gradient">Grunt</h1>
-                                <ul>
+                                <ul class="grunt-ul">
                                     <li>Configuration-based</li>
                                     <li>Task-based</li>
                                     <li>Widely adopted</li>
@@ -160,7 +173,7 @@
 
     <footer class="footer mt-auto py-3 bg-dark text-white">
       <div class="container text-center">
-        <span>&copy; copyright 2024 | BSN </span>
+        <span>Developed by: Bhavya,Nayeem,Satish</span>
       </div>
     </footer>
 
@@ -197,6 +210,21 @@
             }
         });
     });
+
+    let head = document.querySelector(".display-2");
+    setTimeout(() => {
+        head.classList.add("animate__flash");
+    }, 1000);
     </script>
   </body>
 </html>
+
+
+<!-- <div class="marquee marquee--6">
+    <img class="marquee__item" src="https://placehold.co/100x100/purple/gold?font=playfair-display/text=1" width="100" height="100" alt="">
+    <img class="marquee__item" src="https://placehold.co/150x100/purple/gold?font=playfair-display/text=2" width="150" height="100" alt="">
+    <img class="marquee__item" src="https://placehold.co/125x100/purple/gold?font=playfair-display/text=3" width="125" height="100" alt="">
+    <img class="marquee__item" src="https://placehold.co/110x100/purple/gold?font=playfair-display/text=4" width="110" height="100" alt="">
+    <img class="marquee__item" src="https://placehold.co/133x100/purple/gold?font=playfair-display/text=5" width="133" height="100" alt="">
+    <img class="marquee__item" src="https://placehold.co/166x100/purple/gold?font=playfair-display/text=6" width="166" height="100" alt="">
+  </div> -->
