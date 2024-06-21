@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
-.nav-link {
+.nav-link{
   color: white !important;
 }
 body {
@@ -20,9 +20,7 @@ body {
 
 background-size: 11px 11px;
 }
-body{
-  background-color: #FBB03B !important;
-}
+
 .jumbotron {
   background-color: #121212;
   min-height: 100vh;
