@@ -19,7 +19,9 @@ body {
   radial-gradient(rgba(255, 255, 255, 0.312) 10%, transparent 1%);
 
 background-size: 11px 11px;
-
+}
+body{
+  background-color: #FBB03B !important;
 }
 .jumbotron {
   background-color: #121212;
