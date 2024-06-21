@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
-.nav-link{
+.nav-link {
   color: white !important;
 }
 body {
@@ -16,9 +16,9 @@ body {
   background-color: #121212;
   color: whitesmoke;
   background: #121212
-  radial-gradient(rgba(255, 255, 255, 0.312) 10%, transparent 1%);
+    radial-gradient(rgba(255, 255, 255, 0.312) 10%, transparent 1%);
 
-background-size: 11px 11px;
+  background-size: 11px 11px;
 }
 
 .jumbotron {
@@ -54,10 +54,10 @@ section {
   padding: 0 1rem;
   border-radius: 50%;
   display: inline-block !important;
-  mix-blend-mode:hard-light;
+  mix-blend-mode: hard-light;
 }
-img[alt="BROCCOLI"]{
-    mix-blend-mode: unset;
+img[alt="BROCCOLI"] {
+  mix-blend-mode: unset;
 }
 
 ul li {
@@ -72,38 +72,40 @@ ul li {
 
   background-size: 11px 11px;
 }
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 40px 40px;
-    }
+@keyframes move {
+  0% {
+    background-position: 0 0;
   }
+  100% {
+    background-position: 40px 40px;
+  }
+}
 
-.light-org-gradient{
-    background: linear-gradient(90deg, #FF512F, #DD2476);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.light-org-gradient {
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.display-4{
-    background: linear-gradient(90deg, #D4145A, #FBB03B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.display-4 {
+  background: linear-gradient(90deg, #d4145a, #fbb03b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-li,.vl-org-gradient{
-        background: linear-gradient(90deg, #FF5F6D, #FFC371);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        /* opacity:0.8; */
+li,
+.vl-org-gradient {
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* opacity:0.8; */
 }
-li,.org-pink-gradient{
-    background: linear-gradient(90deg,#FE9090, #FF61D2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+li,
+.org-pink-gradient {
+  background: linear-gradient(90deg, #fe9090, #ff61d2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.about li{
-    font-weight: bold;
+.about li {
+  font-weight: bold;
 }
 /* .custom-list li {
     list-style-type: none;
@@ -116,62 +118,116 @@ li,.org-pink-gradient{
     mix-blend-mode: hard-light;
 }
  */
- .animate__flash{
-     animation-iteration-count: infinite;
- }
- span{
-     animation-duration: 3s;
-     animation-delay: 0.2s;
-     animation-iteration-count: infinite;
-    }
-    .animate__flip{
-        animation-iteration-count:unset;
-    }
-    li {
-        list-style: none;
-        display: flex;
-        align-items: center;
-      }
-      li::before {
-        content: '';
-        display: inline-block;
-        background-image: url('images/gulp.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 30px;
-        width: 30px;
-        margin:0rem 1.5rem;
-        border-radius: 50%;
-        animation: rotate 2s linear infinite;
-      }
-.grunt-ul li::before{
-    background-image: url('images/grunt1.jpg');
+.animate__flash {
+  animation-iteration-count: infinite;
 }
-.about li:first-child:before{
-    background-image: url('images/gulp.jpg');
-    width:90px;
-    height:50px;
-    /* animation: rotate 2s linear infinite; */
-    animation: unset;
+span {
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
 }
-.about li:last-child:before{
-    background-image: url('images/grunt1.jpg');
-    width:70px;
-    height:50px;
-    /* animation: rotate 2s linear infinite; */
-    animation: unset;
+.animate__flip {
+  animation-iteration-count: unset;
+}
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+li::before {
+  content: "";
+  display: inline-block;
+  background-image: url("images/gulp.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin: 0rem 1.5rem;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite;
+}
+.grunt-ul li::before {
+  background-image: url("images/grunt1.jpg");
+}
+.about li:first-child:before {
+  background-image: url("images/gulp.jpg");
+  width: 90px;
+  height: 50px;
+  /* animation: rotate 2s linear infinite; */
+  animation: unset;
+}
+.about li:last-child:before {
+  background-image: url("images/grunt1.jpg");
+  width: 70px;
+  height: 50px;
+  /* animation: rotate 2s linear infinite; */
+  animation: unset;
 }
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+.marquee img {
+  width: 150px !important;
+  height: 150px !important;
+}
+.examples .row {
+  padding: 0 20% !important;
+  display: flex;
+  justify-content: center;
+}
+.row img {
+  margin: 1rem 0;
+}
+/*Responsiveness*/
+@media only screen and (max-width: 1000px) and (min-width: 577px) {
+}
+@media only screen and (max-width: 600px) {
+  .about ul li {
+    text-align: justify !important;
+  }
+  .about li:first-child:before {
+    background-image: url("images/gulp.jpg");
+    width: 10rem;
+    height: 2rem;
+    /* animation: rotate 2s linear infinite; */
+    animation: unset;
+  }
+  .about li:last-child:before {
+    background-image: url("images/grunt1.jpg");
+    width: 10rem;
+    height: 2rem;
+    /* animation: rotate 2s linear infinite; */
+    animation: unset;
+  }
+  .gulp-p,
+  .grunt-p,
+  .gulp,
+  .grunt {
+    justify-content: flex-start !important;
+  }
 
-.marquee img{
-    width:150px !important;
-    height:150px !important;
+  .examples .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: flex-start;
+    row-gap: 1.5rem;
+    padding: 0;
+  }
+  .examples .row:nth-child(2n) {
+    flex-shrink: 1;
+  }
+  .examples .row {
+    padding: 0 0% !important;
+    display: flex;
+    justify-content: center;
+  }
+  .row img {
+    margin: 0rem 0;
+  }
 }
