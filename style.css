@@ -189,7 +189,7 @@ li::before {
 }
 @media only screen and (max-width: 600px) {
   .about ul li {
-    text-align: justify !important;
+    text-align: left !important;
   }
   .about li:first-child:before {
     background-image: url("images/gulp.jpg");
